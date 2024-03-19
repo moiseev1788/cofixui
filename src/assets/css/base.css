@@ -1,0 +1,187 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    /* primary */
+    --primary-red-50: #feeeeb;
+    --primary-red-100: #facbc0;
+    --primary-red-200: #f8b1a1;
+    --primary-red-300: #f58e76;
+    --primary-red-400: #f3785c;
+    --primary-red-500: #f05633;
+    --primary-red-600: #da4e2e;
+    --primary-red-700: #aa3d24;
+    --primary-red-800: #842f1c;
+    --primary-red-900: #652415;
+
+    /* secondary */
+    --secondary-gray-50: #e8e8e8;
+    --secondary-gray-100: #b8b8b8;
+    --secondary-gray-200: #969696;
+    --secondary-gray-300: #666666;
+    --secondary-gray-400: #494949;
+    --secondary-gray-500: #1b1b1b;
+    --secondary-gray-600: #191919;
+    --secondary-gray-700: #131313;
+    --secondary-gray-800: #0f0f0f;
+    --secondary-gray-900: #0b0b0b;
+
+    /* success */
+    --success-green-50: #f4f9ee;
+    --success-green-100: #dcebcb;
+    --success-green-200: #cbe2b1;
+    --success-green-300: #b4d58e;
+    --success-green-400: #a5cd78;
+    --success-green-500: #8fc056;
+    --success-green-600: #82af4e;
+    --success-green-700: #66883d;
+    --success-green-800: #4f6a2f;
+    --success-green-900: #3c5124;
+
+    /* warning */
+    --warning-orange-50: #fff0e6;
+    --warning-orange-100: #ffd1b0;
+    --warning-orange-200: #ffbb8a;
+    --warning-orange-300: #ff9c54;
+    --warning-orange-400: #ff8933;
+    --warning-orange-500: #ff6b00;
+    --warning-orange-600: #e86100;
+    --warning-orange-700: #b54c00;
+    --warning-orange-800: #8c3b00;
+    --warning-orange-900: #6b2d00;
+
+    /* danger */
+    --danger-red-50: #fcebeb;
+    --danger-red-100: #f7bfbf;
+    --danger-red-200: #f3a1a1;
+    --danger-red-300: #ed7676;
+    --danger-red-400: #e95b5b;
+    --danger-red-500: #e43232;
+    --danger-red-600: #cf2e2e;
+    --danger-red-700: #a22424;
+    --danger-red-800: #7d1c1c;
+    --danger-red-900: #601515;
+
+    /* neutral */
+    --neutral-white-50: #fdfdfd;
+    --neutral-white-100: #fafafa;
+    --neutral-white-200: #f7f7f7;
+    --neutral-white-300: #f4f4f4;
+    --neutral-white-400: #f1f1f1;
+    --neutral-white-500: #eeeeee;
+    --neutral-white-600: #d9d9d9;
+    --neutral-white-700: #a9a9a9;
+    --neutral-white-800: #838383;
+    --neutral-white-900: #646464;
+
+    /* accent-primary */
+    --accent-primary-red-50: #feeeeb;
+    --accent-primary-red-100: #facbc0;
+    --accent-primary-red-200: #f8b1a1;
+    --accent-primary-red-300: #f58e76;
+    --accent-primary-red-400: #f3785c;
+    --accent-primary-red-500: #f05633;
+    --accent-primary-red-600: #da4e2e;
+    --accent-primary-red-700: #aa3d24;
+    --accent-primary-red-800: #842f1c;
+    --accent-primary-red-900: #652415;
+
+    /* accent-secondary */
+    --accent-secondary-orange-50: #fff3ea;
+    --accent-secondary-orange-100: #ffd9be;
+    --accent-secondary-orange-200: #ffc79f;
+    --accent-secondary-orange-300: #ffad73;
+    --accent-secondary-orange-400: #ff9d58;
+    --accent-secondary-orange-500: #ff852e;
+    --accent-secondary-orange-600: #e8792a;
+    --accent-secondary-orange-700: #b55e21;
+    --accent-secondary-orange-800: #8c4919;
+    --accent-secondary-orange-900: #6b3813; 
+
+    /* accent-gradient */
+
+    --accent-50: linear-gradient(90deg, var(--accent-primary-red-50) 0%, var(--accent-primary-orange-50) 100%);
+    --accent-100: linear-gradient(90deg, var(--accent-primary-red-100) 0%, var(--accent-primary-orange-100) 100%);
+    --accent-200: linear-gradient(90deg, var(--accent-primary-red-200) 0%, var(--accent-primary-orange-200) 100%);
+    --accent-300: linear-gradient(90deg, var(--accent-primary-red-300) 0%, var(--accent-primary-orange-300) 100%);
+    --accent-400: linear-gradient(90deg, var(--accent-primary-red-400) 0%, var(--accent-primary-orange-400) 100%);
+    --accent-500: linear-gradient(90deg, #F05633 2.81%, #FF852E 100%);
+    --accent-600: linear-gradient(90deg, var(--accent-primary-red-600) 0%, var(--accent-primary-orange-600) 100%);
+    --accent-700: linear-gradient(90deg, var(--accent-primary-red-700) 0%, var(--accent-primary-orange-700) 100%);
+    --accent-800: linear-gradient(90deg, var(--accent-primary-red-800) 0%, var(--accent-primary-orange-800) 100%);
+    --accent-900: linear-gradient(90deg, var(--accent-primary-red-900) 0%, var(--accent-primary-orange-900) 100%);
+
+    /* beige */
+    --beige-50: #fbf9f6;
+    --beige-100: #f4ece2;
+    --beige-200: #eee3d5;
+    --beige-300: #e6d6c1;
+    --beige-400: #e1ceb5;
+    --beige-500: #dac2a3;
+    --beige-600: #c6b194;
+    --beige-700: #9b8a74;
+    --beige-800: #786b5a;
+    --beige-900: #5c5144; 
+
+    /* brown */
+    --brown-50: #f0edec;
+    --brown-100: #cfc8c4;
+    --brown-200: #b8ada8;
+    --brown-300: #978780;
+    --brown-400: #837068;
+    --brown-500: #644c42;
+    --brown-600: #5b453c;
+    --brown-700: #47362f;
+    --brown-800: #372a24;
+    --brown-900: #2a201c; 
+
+    /* pink */
+    --pink-50: #fdf3fb;
+    --pink-100: #fad9f1;
+    --pink-200: #f7c6ea;
+    --pink-300: #f4ace1;
+    --pink-400: #f19cdb;
+    --pink-500: #ee83d2;
+    --pink-600: #d977bf;
+    --pink-700: #a95d95;
+    --pink-800: #834874;
+    --pink-900: #643758; 
+
+    /* purple */
+    --purple-50: #f1f2fa;
+    --purple-100: #d3d6f0;
+    --purple-200: #bec2e9;
+    --purple-300: #a1a7df;
+    --purple-400: #8e95d9;
+    --purple-500: #727bcf;
+    --purple-600: #6870bc;
+    --purple-700: #515793;
+    --purple-800: #3f4472;
+    --purple-900: #303457; 
+
+    /* font */
+    --font-family: "Stratos LC", sans-serif;
+}
+
+@font-face {
+    font-family: "Stratos LC";
+    font-display: swap;
+    src: url("../fonts/Stratos-Regular.woff") format("woff"), url("../fonts/Stratos-Regular.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Stratos LC";
+    font-display: swap;
+    src: url("../fonts/Stratos-Medium.woff") format("woff"), url("../fonts/Stratos-Medium.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Stratos LC";
+    font-display: swap;
+    src: url("../fonts/Stratos-SemiBold.woff") format("woff"), url("../fonts/Stratos-SemiBold.woff2") format("woff2");
+    font-weight: 600;
+    font-style: normal;
+  }

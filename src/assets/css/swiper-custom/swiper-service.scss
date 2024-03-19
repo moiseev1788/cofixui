@@ -1,0 +1,42 @@
+.service-carousel {
+    padding-bottom: 0px;
+    @media screen and (max-width: 1024px) {
+        padding-bottom: 40px;
+    }
+    @media screen and (max-width: 320px) {
+        padding-bottom: 30px;
+    }
+    .swiper-pagination {
+        bottom: 0px;
+        display: none;
+        @media screen and (max-width: 1024px) {
+            display: block;
+        }
+    }
+    .swiper-pagination .swiper-pagination-bullet {
+        min-width: 12px;
+        width: 12px;
+        height: 12px;
+        border-radius: 100%;
+        border: 1px solid var(--neutral-white-600);
+        background: transparent;
+        opacity: 1;
+        transition: all .2s;
+        @media screen and (max-width: 320px) {
+            min-width: 8px;
+            width: 8px;
+            height: 8px;
+        }
+    }
+    .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+        background-color: var(--secondary-gray-500) !important;
+        border: none;
+        min-width: 60px;
+        width: 60px;
+        border-radius: 100px;
+        @media screen and (max-width: 320px) {
+            min-width: 30px;
+            width: 30px;
+        }
+    }
+}

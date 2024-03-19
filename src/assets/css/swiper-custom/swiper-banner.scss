@@ -1,0 +1,93 @@
+/* slider */
+.banner-carousel .swiper-wrapper {
+    overflow: hidden;
+    border-radius: 64px;
+    @media screen and (max-width: 414px) {
+        border-radius: 32px;
+    }
+}
+
+.banner-carousel .swiper-pagination {
+    bottom: -30px !important;
+    @media screen and (max-width: 414px) {
+        bottom: -30px !important;
+    }
+}
+
+.banner-carousel .swiper-pagination .swiper-pagination-bullet {
+    min-width: 12px;
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    border: 1px solid var(--neutral-white-600);
+    background: transparent;
+    opacity: 1;
+    @media screen and (max-width: 320px) {
+        min-width: 8px;
+        width: 8px;
+        height: 8px;
+    }
+}
+
+.banner-carousel .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color: var(--secondary-gray-500) !important;
+    border: none;
+}
+
+.banner-carousel {
+    &:hover {
+        .swiper-button-prev {
+            opacity: 1;
+            left: 15px;
+        }
+        .swiper-button-next {
+            opacity: 1;
+            right: 15px;
+        }
+    }
+    .swiper-button-prev {
+        opacity: 0;
+        transition: all .3s;
+        position: absolute;
+        left: 0px;
+        @media screen and (max-width: 1024px) {
+            opacity: 1;
+            left: 15px;
+        }
+        @media screen and (max-width: 414px) {
+            left: 10px;
+        }
+        &::after {
+            content: '';
+            background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M15 18.788L4.29806 8.78797L3.00085 10.0001L13.7028 20.0001L15 18.788Z" fill="%23FDFDFD"/><path d="M13.7031 0L3.00119 10L4.29839 11.2121L15.0003 1.21212L13.7031 0Z" fill="%23FDFDFD"/></svg>');
+            width: 32px;
+            height: 32px;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        
+    }
+    .swiper-button-next {
+        opacity: 0;
+        transition: all .3s;
+        position: absolute;
+        right: 0px;
+        @media screen and (max-width: 1024px) {
+            opacity: 1;
+            right: 15px;
+        }
+        @media screen and (max-width: 414px) {
+            opacity: 1;
+            right: 10px;
+        }
+        &::after {
+            content: '';
+            background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M15 18.788L4.29806 8.78797L3.00085 10.0001L13.7028 20.0001L15 18.788Z" fill="%23FDFDFD"/><path d="M13.7031 0L3.00119 10L4.29839 11.2121L15.0003 1.21212L13.7031 0Z" fill="%23FDFDFD"/></svg>');
+            width: 32px;
+            height: 32px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            transform: rotate(-180deg);
+        }
+    }
+}

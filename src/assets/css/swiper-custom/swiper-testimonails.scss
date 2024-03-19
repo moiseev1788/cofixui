@@ -1,0 +1,100 @@
+.testimonails {
+    position: relative;
+    &-carousel {
+        @media screen and (max-width: 1024px) {
+            padding-bottom:120px;
+        }
+        @media screen and (max-width: 650px) {
+            padding-bottom: 30px;
+        }
+    }
+    .swiper-pagination {
+        bottom: 80px;
+        @media screen and (max-width: 650px) {
+            bottom: 0;
+        }
+    }
+    .swiper-pagination .swiper-pagination-bullet {
+        min-width: 12px;
+        width: 12px;
+        height: 12px;
+        border-radius: 100%;
+        border: 1px solid var(--neutral-white-600);
+        background: transparent;
+        opacity: 1;
+        transition: all .2s;
+        @media screen and (max-width: 320px) {
+            min-width: 8px;
+            width: 8px;
+            height: 8px;
+        }
+    }
+    .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+        background-color: var(--secondary-gray-500) !important;
+        border: none;
+        min-width: 60px;
+        width: 60px;
+        border-radius: 100px;
+        @media screen and (max-width: 320px) {
+            min-width: 30px;
+            width: 30px;
+        }
+    }
+    .swiper-button-next {
+        position: absolute;
+        bottom: 0px;
+        top: auto;
+        left: calc(50% + 8px);
+        &.swiper-button-disabled {
+            opacity: 1;
+            background-color: var(--neutral-white-600);
+        }
+        &::after {
+            content: '';
+        }
+    }
+    .swiper-button-prev {
+        position: absolute;
+        bottom: 0px; 
+        top: auto;
+        left: calc(50% - 70px);
+        &.swiper-button-disabled {
+            opacity: 1;
+            background-color: var(--neutral-white-600);
+        }
+        &::after {
+            content: '';
+        }
+    }
+    .swiper-button-next,
+    .swiper-button-prev {
+        background-color: var(--accent-primary-red-500);
+        width: 64px;
+        min-width: 64px;
+        height: 64px;
+        border-radius: 8px;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        @media screen and (max-width: 1024px) {
+            display: flex;
+        }
+        @media screen and (max-width: 650px) {
+            display: none;
+        }
+        &:hover {
+            background-color: var(--accent-primary-red-600);
+        }
+        .icon {
+            width: 20px;
+            height: 20px;
+            svg {
+                width: 20px;
+                height: 20px;
+            }
+        }
+        @media screen and (max-width: 568px) {
+            display: none;
+        }
+    }
+}
