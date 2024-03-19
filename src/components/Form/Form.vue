@@ -7,6 +7,7 @@
         <div class="form-row">
             <div class="form-col">
                 <div class="form-banner">
+                    <video src="../../assets/video/stakan-video.mp4" preload="none" autoplay muted loop></video>
                     <img src="../../assets/img/banner-form.png" alt="">
                 </div>
             </div>
@@ -21,7 +22,10 @@
 <style lang="scss" scoped>
     .form {
         &-row {
-            @apply flex;
+            @apply flex h-[460px];
+            @media screen and (max-width: 1024px) {
+                    @apply h-[auto];
+                }
         }
         &-col {
             &:nth-child(1) {
@@ -31,6 +35,9 @@
                 }
                 .form-banner {
                     @apply h-full w-full rounded-2xl overflow-hidden;
+                }
+                video {
+                    @apply w-full h-full object-cover;
                 }
                 img {
                     @apply w-full h-full object-cover;
